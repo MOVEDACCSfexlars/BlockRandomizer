@@ -23,6 +23,7 @@ public class main extends JavaPlugin {
         saveConfig();
 
 
+        // Runs the loop with the tick speed the player supplied in the Configuration File, once the player changes the config the server does need to be reloaded.
         Bukkit.getScheduler().scheduleSyncRepeatingTask(this, () -> {
             for (Player player : Bukkit.getOnlinePlayers()) {
                     // Basically grabs a random Item from the material list and gives it to the player
